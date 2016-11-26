@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#aaaaaa"
+    >
+    <LinearLayout
+        android:background="#aaaaaa"
+        android:id="@+id/outer"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="32dp"
+        >
+        <ListView android:id="@+id/tasks"
+            android:background="#aaaaaa"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent">
+        </ListView>
+    </LinearLayout>
+    <EditText
+        android:textColor="#000"
+        android:id="@+id/todoText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        />
+    <Button
+        android:id="@+id/search_btn"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Add!"
+        android:onClick="addTodo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
